@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Muhammad Rayyan Khan — self-taught programmer, ML enthusiast, and 12th-grade student in Greenwood, Indiana.">
+    <meta property="og:title" content="Muhammad Rayyan Khan – Portfolio">
+    <meta property="og:description" content="Self-taught programmer focused on machine learning and generative AI. Experience in fintech, debate, and Model UN.">
+    <meta property="og:type" content="website">
+    <title>Muhammad Rayyan Khan – Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Site-wide animated 3D background (fixed behind every section) -->
+<canvas id="bg3d" aria-hidden="true"></canvas>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header id="site-header">
+    <nav>
+        <a href="#hero" class="nav-logo">rayyan<span>.dev</span></a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero" data-section="hero">Home</a></li>
+            <li><a href="#about" data-section="about">About</a></li>
+            <li><a href="#activities" data-section="activities">Activities</a></li>
+            <li><a href="#projects" data-section="projects">Projects</a></li>
+            <li><a href="#experience" data-section="experience">Experience</a></li>
+            <li><a href="#start-project" class="nav-cta" data-section="start-project">Start a Project</a></li>
+            <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg" style="background-image: url('pic.jpeg');" aria-hidden="true"></div>
+        <div class="hero-bg-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+            <div class="hero-greeting">// Hello, world!</div>
+            <h1 class="hero-name">
+                I'm <span>Muhammad<br>Rayyan Khan.</span>
+            </h1>
+            <div class="hero-typed">
+                <span id="element"></span>
+            </div>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary">View My Work ↓</a>
+                <a href="#contact" class="btn-ghost">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ABOUT -->
+    <section class="page-section" id="about">
+        <div class="section-label">// about me</div>
+        <h2 class="section-heading">Who I Am:</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I'm a self-taught programmer and 12th-grade student at Whiteland Community High School — originally from Karachi, now living in Greenwood, Indiana. I've been building with Python, JavaScript, HTML, and CSS since middle school, not for grades, but because I genuinely wanted to understand how things worked.</p>
+                <p>My long-term focus is machine learning and generative AI: fields where design decisions carry consequences far beyond any single system. I came to that understanding not from a textbook, but from an internship at a digital bank where I watched engineers reconcile software with religious principle.</p>
+                <p>Outside of code, I debate, compete in Model United Nations, and think a lot about the relationship between technology and the people it affects.</p>
+            </div>
+            <div>
+                <div class="skills-block-label">Languages &amp; Tools</div>
+                <div class="skills-grid">
+                    <div class="skill-pill">Python</div>
+                    <div class="skill-pill">JavaScript</div>
+                    <div class="skill-pill">HTML &amp; CSS</div>
+                    <div class="skill-pill">Machine Learning</div>
+                    <div class="skill-pill">Data Science</div>
+                    <div class="skill-pill">Git</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ACTIVITIES -->
+    <section class="page-section" id="activities">
+        <div class="section-label">// activities</div>
+        <div class="section-heading-row">
+            <h2 class="section-heading">What I have done:</h2>
+            <a href="Muhammad_Rayyan_Khan_Resume.pdf" download class="btn-resume">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download My CV
+            </a>
+        </div>
+        <div class="cards-grid">
+
+            <div class="card">
+                <div class="card-icon" aria-hidden="true">🎤</div>
+                <div class="card-title">Debate Team Captain</div>
+                <div class="card-sub">Bahria Town School &amp; College</div>
+                <p class="card-text">Led the debate team, writing and delivering speeches under pressure. Guided the team to a competitive fifth-place finish in regional competition — and learned more from the losses than the podium.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon" aria-hidden="true">🌍</div>
+                <div class="card-title">Model United Nations</div>
+                <div class="card-sub">Delegate — Syria, Grade 9</div>
+                <p class="card-text">Represented Syria in MUN, spending weeks inside a geopolitical context I didn't share, then defending positions I personally disagreed with. The first time I understood that precision and persuasion are different skills — and you need both.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon" aria-hidden="true">💻</div>
+                <div class="card-title">Self-Taught Programmer</div>
+                <div class="card-sub">Since Middle School</div>
+                <p class="card-text">Started learning Python, HTML, CSS, and JavaScript on my own — not for a grade, but to understand how things actually work. This portfolio is built entirely from scratch: every line written by hand.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon" aria-hidden="true">🏏</div>
+                <div class="card-title">Cricket</div>
+                <div class="card-sub">Karachi, Pakistan</div>
+                <p class="card-text">Grew up playing cricket in Karachi — a sport that taught me teamwork and composure under pressure, and how to stay focused when the environment is anything but quiet.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- PROJECTS -->
+    <section class="page-section" id="projects">
+        <div class="section-label">// projects</div>
+        <h2 class="section-heading">What I've Built:</h2>
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-top">
+                    <h3 class="project-title">rayyan.dev Portfolio</h3>
+                    <span class="project-status">Live</span>
+                </div>
+                <p class="project-desc">A hand-coded personal site — dark theme, responsive layout, typed hero animation, and zero frameworks. Designed and built from scratch to present my work the way I actually think about it.</p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <h3 class="project-title">Python Data Utilities</h3>
+                </div>
+                <p class="project-desc">A collection of scripts for CSV processing, file I/O, and object-oriented design — built while teaching myself Python outside of school. Focused on clean structure and practical data handling.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">CSV</span>
+                    <span class="tag">OOP</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <h3 class="project-title">ML &amp; AI Exploration</h3>
+                    <span class="project-status project-status--wip">In Progress</span>
+                </div>
+                <p class="project-desc">Self-directed study in machine learning fundamentals — model training, data pipelines, and the ethics of generative systems. Building toward applied projects in the months ahead.</p>
+                <div class="project-tags">
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Data Science</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- EXPERIENCE -->
+    <section class="page-section" id="experience">
+        <div class="section-label">// experience</div>
+        <h2 class="section-heading">Where I've Worked:</h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-period">Summer 2023 · Extended +3 months</div>
+                <div class="timeline-title">IT Intern</div>
+                <div class="timeline-org">Raqami Islamic Digital Bank — Karachi, Pakistan</div>
+                <p class="timeline-desc">
+                    Worked in the IT department of a fintech institution building interest-free digital banking for the Muslim world. During mobile app beta-testing, I flagged a calculation discrepancy that turned out to matter beyond accounting standards — in Islamic finance, the underlying structure of a transaction determines whether a product is permissible at all. I came in knowing how to write code. I left starting to understand what code commits you to.
+                </p>
+                <div class="timeline-tags">
+                    <span class="tag">Server Maintenance</span>
+                    <span class="tag">Mobile Beta Testing</span>
+                    <span class="tag">Digital Asset Management</span>
+                    <span class="tag">Fintech</span>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-period">Summer 2026 – Present</div>
+                <div class="timeline-title">Amazon Associate</div>
+                <div class="timeline-org">Amazon Warehouse IND4 — Indianapolis, USA</div>
+                <p class="timeline-desc">
+                    Part-time Associate at Amazon, where I handle fast-paced operational work that runs on the same logistics and inventory systems I study as a programmer. It's a different angle on technology — seeing the infrastructure from the inside out.
+                </p>
+                <div class="timeline-tags">
+                    <span class="tag">Part-Time</span>
+                    <span class="tag">Logistics</span>
+                    <span class="tag">Operations</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- START A PROJECT -->
+    <section class="page-section" id="start-project">
+        <div class="section-label">// hire me</div>
+        <h2 class="section-heading">Start a Project:</h2>
+        <p class="project-form-intro">Want a website built? Tell me about it below — I'll get an email with your details and get back to you.</p>
+
+        <form class="project-form" id="project-form" novalidate>
+            <!-- Web3Forms config: replace YOUR_ACCESS_KEY_HERE with your free key from web3forms.com -->
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="hidden" name="subject" value="New website project request — rayyan.dev">
+            <input type="hidden" name="from_name" value="rayyan.dev project form">
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="pf-name">Name</label>
+                    <input type="text" id="pf-name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="pf-phone">Phone Number</label>
+                    <input type="tel" id="pf-phone" name="phone" placeholder="+1 (555) 000-0000" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="pf-email">Email Address</label>
+                <input type="email" id="pf-email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pf-description">Project Description</label>
+                <textarea id="pf-description" name="description" rows="6" placeholder="Tell me what you need — reference websites you like, pages you want, style, features, deadline, budget, etc." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="pf-files">Reference Files (images or videos)</label>
+                <div class="file-drop" id="file-drop">
+                    <input type="file" id="pf-files" name="attachment[]" accept="image/*,video/*" multiple>
+                    <div class="file-drop-text">
+                        <span class="file-drop-main">Click to upload or drag files here</span>
+                        <span class="file-drop-sub">Images or videos • up to 5MB each</span>
+                    </div>
+                    <ul class="file-list" id="file-list"></ul>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary form-submit" id="pf-submit">Send Project Request</button>
+            <p class="form-status" id="pf-status" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+
+</main>
+
+<!-- CONTACT / FOOTER -->
+<footer class="contact-footer" id="contact">
+    <h2 class="footer-heading">Let's Connect</h2>
+    <p class="footer-sub">Open to conversations about technology, opportunities, or just a good problem to solve.</p>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/rayyan-khan-b42b1236b/" class="social-btn" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+        </a>
+        <a href="https://www.instagram.com/26_nvm" class="social-btn" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100035321910881" class="social-btn" target="_blank" rel="noopener noreferrer">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+        </a>
+    </div>
+    <div class="footer-copy">© 2026 Muhammad Rayyan Khan · Built from scratch in Greenwood, Indiana</div>
+</footer>
+
+<script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+<script>
+    new Typed('#element', {
+        strings: [
+            'a self-taught programmer.',
+            'focused on ML & AI.',
+            'bridging two worlds with code.',
+        ],
+        typeSpeed: 46,
+        backSpeed: 28,
+        backDelay: 1900,
+        loop: true,
+    });
+
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', isOpen);
+        navToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('nav-open');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.setAttribute('aria-label', 'Open menu');
+        });
+    });
+
+    // Header shadow once the page scrolls
+    const siteHeader = document.getElementById('site-header');
+    const onHeaderScroll = () => {
+        siteHeader.classList.toggle('header-scrolled', window.scrollY > 12);
+    };
+    onHeaderScroll();
+    window.addEventListener('scroll', onHeaderScroll, { passive: true });
+
+    // Scrollspy — highlight the nav link for the section currently in view
+    const navAnchors = document.querySelectorAll('.nav-links a[data-section]');
+    const sections = Array.from(navAnchors)
+        .map(a => document.getElementById(a.dataset.section))
+        .filter(Boolean);
+
+    if ('IntersectionObserver' in window && sections.length) {
+        const spy = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    navAnchors.forEach(a => a.classList.remove('active'));
+                    const activeLink = document.querySelector(`.nav-links a[data-section="${entry.target.id}"]`);
+                    if (activeLink) activeLink.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+        sections.forEach(section => spy.observe(section));
+    }
+</script>
+
+<!-- ─── Site-wide animated 3D background ─── -->
+<script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+<script>
+(function () {
+    const canvas = document.getElementById('bg3d');
+    if (!canvas || typeof THREE === 'undefined') return;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.z = 60;
+
+    // Particle field — points scattered through 3D space
+    const PARTICLE_COUNT = window.innerWidth < 768 ? 260 : 550;
+    const positions = new Float32Array(PARTICLE_COUNT * 3);
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+        positions[i * 3] = (Math.random() - 0.5) * 220;
+        positions[i * 3 + 1] = (Math.random() - 0.5) * 220;
+        positions[i * 3 + 2] = (Math.random() - 0.5) * 220;
+    }
+    const particleGeo = new THREE.BufferGeometry();
+    particleGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    const particleMat = new THREE.PointsMaterial({
+        color: 0xF59E0B,
+        size: 1.15,
+        transparent: true,
+        opacity: 0.55,
+        sizeAttenuation: true,
+    });
+    const particles = new THREE.Points(particleGeo, particleMat);
+    scene.add(particles);
+
+    // A few slow-rotating wireframe icosahedra for depth
+    const wireGroup = new THREE.Group();
+    const wireGeo = new THREE.IcosahedronGeometry(14, 0);
+    const wireMat = new THREE.MeshBasicMaterial({ color: 0xF59E0B, wireframe: true, transparent: true, opacity: 0.12 });
+    const positionsFor = [
+        [-45, 20, -30], [50, -15, -50], [0, 40, -70], [30, -35, -20],
+    ];
+    positionsFor.forEach(([x, y, z]) => {
+        const mesh = new THREE.Mesh(wireGeo, wireMat);
+        mesh.position.set(x, y, z);
+        mesh.userData.speed = 0.05 + Math.random() * 0.08;
+        wireGroup.add(mesh);
+    });
+    scene.add(wireGroup);
+
+    let mouseX = 0, mouseY = 0;
+    window.addEventListener('mousemove', (e) => {
+        mouseX = (e.clientX / window.innerWidth - 0.5) * 2;
+        mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+    });
+
+    window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    let scrollY = 0;
+    window.addEventListener('scroll', () => { scrollY = window.scrollY; });
+
+    const clock = new THREE.Clock();
+
+    function animate() {
+        requestAnimationFrame(animate);
+        const t = clock.getElapsedTime();
+
+        if (!prefersReducedMotion) {
+            particles.rotation.y = t * 0.02;
+            particles.rotation.x = t * 0.008;
+
+            wireGroup.children.forEach((mesh) => {
+                mesh.rotation.x += mesh.userData.speed * 0.01;
+                mesh.rotation.y += mesh.userData.speed * 0.015;
+            });
+
+            // subtle parallax from mouse + scroll
+            camera.position.x += (mouseX * 6 - camera.position.x) * 0.02;
+            camera.position.y += (-mouseY * 6 - camera.position.y) * 0.02;
+            camera.position.z = 60 + scrollY * 0.01;
+            camera.lookAt(scene.position);
+        }
+
+        renderer.render(scene, camera);
+    }
+    animate();
+})();
+</script>
+
+<!-- ─── Start a Project form: file preview + Web3Forms submission ─── -->
+<script>
+(function () {
+    const fileInput = document.getElementById('pf-files');
+    const fileList = document.getElementById('file-list');
+    const fileDrop = document.getElementById('file-drop');
+    const form = document.getElementById('project-form');
+    const statusEl = document.getElementById('pf-status');
+    const submitBtn = document.getElementById('pf-submit');
+
+    function renderFileList() {
+        fileList.innerHTML = '';
+        Array.from(fileInput.files).forEach((file) => {
+            const li = document.createElement('li');
+            const sizeKB = (file.size / 1024).toFixed(0);
+            li.textContent = `${file.name} (${sizeKB} KB)`;
+            fileList.appendChild(li);
+        });
+    }
+
+    fileInput.addEventListener('change', renderFileList);
+
+    ['dragover', 'dragleave', 'drop'].forEach((evt) => {
+        fileDrop.addEventListener(evt, (e) => e.preventDefault());
+    });
+    fileDrop.addEventListener('dragover', () => fileDrop.classList.add('file-drop--active'));
+    fileDrop.addEventListener('dragleave', () => fileDrop.classList.remove('file-drop--active'));
+    fileDrop.addEventListener('drop', (e) => {
+        fileDrop.classList.remove('file-drop--active');
+        if (e.dataTransfer.files.length) {
+            fileInput.files = e.dataTransfer.files;
+            renderFileList();
+        }
+    });
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const accessKey = form.querySelector('input[name="access_key"]').value;
+        if (!accessKey || accessKey === 'YOUR_ACCESS_KEY_HERE') {
+            statusEl.textContent = 'Form isn\'t connected yet — add your Web3Forms access key in the HTML to enable this form.';
+            statusEl.className = 'form-status form-status--error';
+            return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending…';
+        statusEl.textContent = '';
+        statusEl.className = 'form-status';
+
+        try {
+            const formData = new FormData(form);
+            const res = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData,
+            });
+            const result = await res.json();
+
+            if (result.success) {
+                statusEl.textContent = 'Thanks! Your project request has been sent — I\'ll be in touch soon.';
+                statusEl.className = 'form-status form-status--success';
+                form.reset();
+                fileList.innerHTML = '';
+            } else {
+                statusEl.textContent = 'Something went wrong sending your request. Please try again or reach out directly.';
+                statusEl.className = 'form-status form-status--error';
+            }
+        } catch (err) {
+            statusEl.textContent = 'Network error — please check your connection and try again.';
+            statusEl.className = 'form-status form-status--error';
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Project Request';
+        }
+    });
+})();
+</script>
+
+</body>
+</html>
